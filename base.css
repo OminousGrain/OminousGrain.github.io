@@ -8,6 +8,8 @@ h1{
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
+    
+    
   }
   
   /* Links inside the navbar */
@@ -97,3 +99,15 @@ h1{
   .mySlides{
     width: 100%;
   }
+
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+body { 
+  background: url(/img/cream_dust.png) repeat 0 0;
+}
+
