@@ -1,5 +1,9 @@
 <!doctype html>
 <html dir="[direction]" lang="[language]" class="[class names]">
+     <img class="mySlides" src="images/tech1.jpeg">
+    <img class="mySlides" src="images/tech2.jpeg">
+    <img class="mySlides" src="images/tech3.jpeg">
+    <img class="mySlides" src="images/tech4.jpeg">
 	<head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href = "images/logo.png" rel="icon" type="image/gif">
@@ -21,7 +25,7 @@
         <a href="base.html">Home</a>
         <a href="contact.html">Contact</a>
     <div class="dropdown">
-        <button class="dropbtn">IT 
+        <button class="dropbtn">Blog Questions 
         <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
@@ -33,12 +37,35 @@
             <a href="legalGuidelines.html">Legal guidelines and their impact upon digital projects</a>
         </div>
         </div> 
+         
+
+
+
+    <div class="dropdown">
+    <button class="dropbtn">Review Questions 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+          <a href="modernBusiness.html">Modern business</a>
+        <a href="planningasite.html">Planning a site</a>
+        <a href="digitalprojecthazards.html">Digital project hazards</a>
+        <a href="choosingtherighttechnology.html">Choosing the right technology</a>
+        <a href="technologysolutionsoutcomes.html">Technology solution outcomes</a>
+        <a href="legalGuidelines.html">Legal guidelines and their impact upon digital projects</a>
     </div>
+  </div> 
+
+
+
+
+
+    </div>
+   
+
+<article>
     <br>
     <h1>Technology Solution Outcomes</h1>
     <br>
-
-
 
      <h2>Using Trello</h2>
     <p>
@@ -56,7 +83,25 @@
     <p>
         Word Online was used to write the text content for this blog, it was then converted into HTML appropriate syntax. It is possible to write entirely within the HTML framework, however, it is a much nicer user experience to use a word processor.
     </p>
-          
-                                            
+    <br>
+    <br>
+</article>       
+   <footer> &copy; Benjamin Kaufman 2019 </footer>                                           
 	</body>
+    <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+    </script>
 </html>

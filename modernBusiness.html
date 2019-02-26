@@ -1,5 +1,9 @@
 <!doctype html>
 <html dir="[direction]" lang="[language]" class="[class names]">
+    <img class="mySlides" src="images/tech1.jpeg">
+    <img class="mySlides" src="images/tech2.jpeg">
+    <img class="mySlides" src="images/tech3.jpeg">
+    <img class="mySlides" src="images/tech4.jpeg">
 	<head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href = "images/logo.png" rel="icon" type="image/gif">
@@ -17,7 +21,7 @@
         <a href="base.html">Home</a>
         <a href="contact.html">Contact</a>
     <div class="dropdown">
-        <button class="dropbtn">IT 
+        <button class="dropbtn">Blog Questions  
         <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
@@ -29,7 +33,30 @@
             <a href="legalGuidelines.html">Legal guidelines and their impact upon digital projects</a>
         </div>
         </div> 
+         
+
+
+
+    <div class="dropdown">
+    <button class="dropbtn">Review Questions 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+          <a href="modernBusiness.html">Modern business</a>
+        <a href="planningasite.html">Planning a site</a>
+        <a href="digitalprojecthazards.html">Digital project hazards</a>
+        <a href="choosingtherighttechnology.html">Choosing the right technology</a>
+        <a href="technologysolutionsoutcomes.html">Technology solution outcomes</a>
+        <a href="legalGuidelines.html">Legal guidelines and their impact upon digital projects</a>
     </div>
+  </div> 
+
+
+
+
+
+    </div>
+    <article>
         <br>
         <h1>Modern Business</h1>
         <br>
@@ -52,6 +79,23 @@
         <p>The ability to monitor the performance of a system such  as a website and to improve its performance is the concern which companies devote many thousands of dollars to. SEO optimisation is the process of tinkering with your site to improve its ranking on google; this would be considered using ‘information management’ to improve website performance. Similarly, click funnels are optimised to increase the rate of conversion into actual inquiries or purchases (depending on the service you are providing).</p>
         <br>
         <p>Most importantly, your IT team knows the best and latest applications for performing all these operations, which turn directly into success and profitability for your company. Investing in proper training and recruiting is absolutely crucial for a business in today’s world.</p>
-
+    </article>
+      <footer> &copy; Benjamin Kaufman 2019 </footer>
 	</body>
+      <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+    </script>
 </html>
