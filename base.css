@@ -116,7 +116,9 @@ article {
   margin-right: auto;
 }
 p:hover {
- background-color:seashell;
+ background-color:black;
+ color:white;
+
 }
 
 p {
@@ -155,5 +157,15 @@ footer {
   height: 90%;
  
 
+}
+.imagebrowser{
+
+ display:flex;
+ justify-content: space-between;
+
+}
+.imagebrowser img {
+  width:45%;
+  height:45%;
 }
 </style>
